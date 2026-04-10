@@ -32,4 +32,4 @@ jobs:
       # 4. Проверяем, что тесты вообще запускаются
       - name: Run tests with unittest
         run: |
-          python -m unittest test_main.py -v
+          python -m unittest test_module.py -v
