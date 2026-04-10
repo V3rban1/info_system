@@ -13,4 +13,4 @@ def program_module(input_data):
 
 if __name__ == '__main__':
     user_input = input('Введите ваш запрос: ')
-    program_module(user_input)
+    program_module(user_input)  # test 1
