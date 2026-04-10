@@ -1,6 +1,12 @@
-text = input('Введите ваш запрос: ')
+input_data = input('Введите ваш запрос: ')
 
-if text.isnumeric():
-    print('Вы ввели число:', text)
+if not input_data:
+    print('Пустой ввод.')
+elif input_data.startswith('https://'):
+    print('Ваш запрос похож на веб-ресурс.')
+elif input_data.endswith('.txt'):
+    print('Ваш запрос похож на файл формата TXT.')
+elif input_data.isnumeric():
+    print('Вы ввели число:', input_data)
 else:
-    print('Ваш запрос содердит только строку.')
+    print('Ваш запрос содержит только строку.')
