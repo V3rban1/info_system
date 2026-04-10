@@ -1,10 +1,12 @@
 name: CI - run unittests
 
-# Запускаем при пуше в main
+# Запускается при пуше и пуле в main
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches: [main]
 
 jobs:
   test:
